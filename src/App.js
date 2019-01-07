@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import CatAddContainer from './containers/CatAddContainer'
+import CatActionContainer from './containers/CatActionContainer'
+import { Provider } from "react-redux";
+import store from "./store";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Provider store={store}>
+        <div className="container-fluid">
+          <div className="row justify-content-md-center">
+            <h1>Jack's Cat Tracker</h1>
+          </div>
+          <div className="row justify-content-md-center">
+            <div className="col-md-12">
+              <CatAddContainer />
+            </div>
+          </div>
+          <div>
+            <CatActionContainer />
+          </div>
+        </div>
+        
+      </Provider>
     );
   }
 }
