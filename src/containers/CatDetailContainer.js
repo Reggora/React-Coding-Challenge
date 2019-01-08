@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { toggleEdit } from '../actions/ToggleEdit'
+import { deleteCat } from '../actions/DeleteCat'
 import { bindActionCreators } from 'redux'
 
 
@@ -47,7 +48,10 @@ class CatDetailContainer extends Component {
 								onClick={() => {this.props.toggleEdit()}}>Edit</button>
 						</div>
 						<div className="col-md-6">
-							<button type="button" className="btn btn-danger btn-block">Delete</button>
+							<button 
+								type="button" 
+								className="btn btn-danger btn-block"
+								onClick={() => {this.props.deleteCat(this.props.cat)}}>Delete</button>
 						</div>
 					</div>
 				</div>
@@ -63,7 +67,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-	return bindActionCreators({ toggleEdit: toggleEdit}, dispatch)
+	return bindActionCreators({ toggleEdit: toggleEdit, deleteCat: deleteCat}, dispatch)
 }
 
 

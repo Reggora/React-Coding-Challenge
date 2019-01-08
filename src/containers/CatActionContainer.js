@@ -9,7 +9,7 @@ class CatActionContainer extends Component {
 	render() {
 		let container;
 		if(this.props.edit){
-			container = <div>test</div>
+			container = <CatEditContainer />
 		} else {
 			container = <CatDetailContainer />
 		}

@@ -6,6 +6,8 @@ export default function (state = false, action) {
 			return false;
 		case 'CAT_ADDED':
 			return false;
+		case 'CAT_SAVED':
+			return false
 		default:
 			return state;
 	}
