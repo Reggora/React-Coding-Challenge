@@ -4,15 +4,11 @@ import { toggleEdit } from '../actions/ToggleEdit'
 import { deleteCat } from '../actions/DeleteCat'
 import { bindActionCreators } from 'redux'
 
-
+// Container that displays the data for the selected cat
 class CatDetailContainer extends Component {
 
+	// Return the component for the cat that is selected
 	render() {
-		if(!this.props.cat){
-			return (
-				<p>No Selected Cat</p>
-			)
-		}
 		return (
 			<div className="card">
   				<div className="card-body">
@@ -60,16 +56,18 @@ class CatDetailContainer extends Component {
 	}
 }
 
+// Links the state from redux for catSelected to the props for cat
 function mapStateToProps(state) {
 	return {
 		cat: state.catSelected
 	}
 }
 
+// Links the dispatch actions for toggling edit and deletion from redux state to props
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators({ toggleEdit: toggleEdit, deleteCat: deleteCat}, dispatch)
 }
 
 
-
+// export the react-redux connected component
 export default connect(mapStateToProps, mapDispatchToProps)(CatDetailContainer);

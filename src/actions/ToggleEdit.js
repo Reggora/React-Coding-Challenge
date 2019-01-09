@@ -1,5 +1,9 @@
-export function toggleEdit(cat) {
+import {CAT_EDIT} from './ActionTypes'
+
+
+// Action for clicking the edit button
+export function toggleEdit() {
 	return {
-		type: 'EDIT_CAT'
+		type: CAT_EDIT
 	}
 }

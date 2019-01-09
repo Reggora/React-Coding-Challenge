@@ -4,7 +4,8 @@ import CatActionContainer from './containers/CatActionContainer'
 import { Provider } from "react-redux";
 import store from "./store";
 
-class App extends Component {
+// React EntryPoint, react-redux provider linked to store
+export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
@@ -26,5 +27,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
