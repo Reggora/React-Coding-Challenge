@@ -1,4 +1,3 @@
-
 # React - Coding Challenge
 
 Reggora is looking for people who can build awesome products, so we created this challenge to test our candidates' overall development skills.
