@@ -78,7 +78,7 @@ class CatEditContainer extends Component {
 			</div>
 		)
 	}
-
+	// Determines the style for the save button depending on the state
 	styleSaveButton(){
 		if(this.state.name && this.state.breed && this.state.description){
 			return "btn btn-success btn-block"
@@ -86,11 +86,13 @@ class CatEditContainer extends Component {
 			return "btn btn-danger btn-block"
 		}
 	}
+	// returns true if parts of the state are empty
 	isDisabled(){
 		return !(this.state.name && this.state.breed && this.state.description)
 
 	}
 
+	// Handlers for the different text inputs
 	onNameChange(name) {
 		this.setState({name : name})
 	}
