@@ -1,7 +1,7 @@
 # CatDex
 CatDex allows a user to keep track of all his or her cats (index). The user can also add, edit cat, and delete a cat.
 
-Technologies used to create CatDex are: React, Redux, Ruby on Rails, PostgreSQL, HTML, CSS/Bootstrap
+Technologies used to create CatDex are: React, Redux, Ruby on Rails, PostgreSQL, AWS S3, HTML, and CSS/Bootstrap.
 
 <p align="center">
 <img src="./app/assets/images/catdex-photo.png" width="900" height="350" align="middle"/>
