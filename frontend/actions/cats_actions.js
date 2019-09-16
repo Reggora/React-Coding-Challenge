@@ -25,14 +25,13 @@ export const requestSingleCat = id => dispatch => {
   );
 };
 
-export const makeCat = cat => dispatch => {
-  return APIUtil.makeCat(cat).then(
+export const makeCat = cat => dispatch =>
+  APIUtil.makeCat(cat).then(
     cat => {
-      dispatch(requestSingleCat(cat.id));
+      return dispatch(requestSingleCat(cat.id));
     },
     err => dispatch(receiveErrors(err.responseJSON))
   );
-};
 
 export const updateCat = (catId, cat) => dispatch => {
   return APIUtil.updateCat(cat).then(
