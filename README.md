@@ -1,41 +1,22 @@
+# CatDex
+CatDex allows a user to keep track of all his or her cats (index). The user can also add, edit cat, and delete a cat.
 
-# React - Coding Challenge
+Technologies used to create CatDex are: React, Redux, Ruby on Rails, PostgreSQL, AWS S3, HTML, and CSS/Bootstrap.
 
-Reggora is looking for people who can build awesome products, so we created this challenge to test our candidates' overall development skills.
+<p align="center">
+<img src="./app/assets/images/catdex-photo.png" width="900" height="350" align="middle"/>
+</p>
 
-## Instructions
-#### 1. Build your web-app
-You have 1 week to complete the challenge.
+You can visit CatDex [here](https://catdex.herokuapp.com)! Or visit my portfolio site [here](https://davidyoon85.github.io)!
 
-*Implementation and design will be evaluated.*
-#### 2. Submit your challenge
-Follow these instructions to submit your challenge.
-* Setup your Development Environment
-* Write your Code
-* Commit your Changes
-* Fork the Challenge Repository
-* Issue a Pull Request
-
-
-#### 3. Impress us with your skills
-
-## Challenge
+### Challenge
 Jack owns so many cats that he can't keep track of all of them. He needs some way to keep track of all of his cats - almost like a Pokédex for cats.
 
-
-## Requirements
+### Requirements
 Your web app should be able to complete the following tasks:
-* Add a new Cat (Name, Breed, Description, or anything else you think would be important)
-* Remove Cats
-* Edit Cats
-* List all of his Cats
-* Use Redux for state management and utilize frontend actions
 
-## Bonus Points
-* Use a backend / database for storage
-
-## Grading
-The grading of the app  will be based off of three criteria:
-* **30%** - UI and UX
-* **40%** - Overall Design and Structure
-* **30%** - Data Management and Store
+Add a new Cat (Name, Breed, Description, or anything else you think would be important)
+Remove Cats
+Edit Cats
+List all of his Cats
+Use Redux for state management and utilize frontend actions
