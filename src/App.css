@@ -1,0 +1,213 @@
+.App {
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  text-align: left;
+  background-color: #247BA0;
+  padding-top: 5px;
+  color: white;
+  font-size: 22px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  min-height: 110px;
+}
+
+.App-header img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin-top: -20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+.App-header h1 {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 25vmin;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.cat-list {
+  overflow: hidden;
+}
+
+.cat-card-add {
+  width: 65%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#FFFFFF;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-content-add {
+  text-align: center;
+  /* padding-top: 10px;  */
+  padding-bottom: 20px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  min-height: 115px;
+}
+
+#add-button {
+  margin-top: 10px;
+  margin-left: 55px;
+}
+
+#add-toggle-button {
+  width: 100%;
+  min-height: 100%;
+}
+
+#open-toggle-button {
+  width: 100%;
+  min-height: 100%;
+}
+
+#add-toggle-close-button {
+  width: 100%;
+  margin-top: -5px;
+  min-height: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#close-toggle-button {
+  width: 100%;
+  margin-top: -5px;
+  min-height: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cat-card {
+  width: 65%;
+  margin: 10px auto;
+  background-color:#FFFFFF;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-content {
+  text-align: left;
+  padding-top: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-bottom: 30px;
+  min-height: 75px;
+}
+
+.toggle-open {
+  min-height: 20px;
+  background-color: #70C1B3;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.cat-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #247BA0;
+}
+
+.cat-breed {
+  font-size: 20px;
+  color: #B2DBBF;
+}
+
+.cat-desc {
+  font-size: 18px;
+  word-wrap: break-word;
+  color: #505050;
+}
+
+.card-content-edit {
+  text-align: center;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  margin: auto;
+  min-height: 115px;
+}
+
+.card-buttons {
+  float: right;
+  font-size: 5px;
+}
+
+#remove-button {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#done-button {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.edit-buttons {
+  display: inline;
+}
+
+@media only screen and (max-width:864px) {
+  .card-content {
+    padding-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 10px;
+  }
+  .card-content-edit {
+    padding-top: 5px; 
+    padding-bottom: 0px;
+    min-height: 75px;
+  }
+
+  #add-button {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cat-name{
+    display: block;
+  }
+
+  .edit-buttons {
+    display: block;
+  }
+
+  #remove-button {
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+  
+  #done-button {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+}
